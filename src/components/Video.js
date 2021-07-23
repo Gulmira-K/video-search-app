@@ -5,8 +5,7 @@ const Video = ({ video, onVideoSelect }) => {
   const handleSelect = () => {
     onVideoSelect(video)
   }
-  console.log(video)
-
+  
   return (
     <div className='video-item item' onClick={handleSelect}>
       <img className='ui image'src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
